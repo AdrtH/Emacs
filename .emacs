@@ -18,6 +18,8 @@
 (package-initialize)
 
 (add-to-list 'custom-theme-load-path
+             "~/Emacs/Theme/")
+(add-to-list 'custom-theme-load-path
              "/path/to/gruber-darker-theme/")
 
 (require 'company)
@@ -26,6 +28,7 @@
 (require 'yasnippet)
 (add-hook 'after-init-hook 'yas-global-mode)
 (global-set-key (kbd "C-*") 'yas-expand)
+
 
 (require 'multiple-cursors)
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
